@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap');
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #020617;
+    color: #E6F5FF;
+    width: 100%;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.navList{
+    font-size: 1.5rem;
+}
+
+.navUl{
+    display: flex;
+    gap: 12px;
+}
+
+.nav ul li {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+.navUl li:hover {
+    color: #2ECBF7;
+    text-decoration: underline;
+}
