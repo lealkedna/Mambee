@@ -4,8 +4,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #020617;
-    color: #E6F5FF;
+    background-color: var(--fundo);
+    color: var(--branco);
     width: 100%;
     font-family: 'Roboto Flex', sans-serif;
 }
@@ -26,6 +26,6 @@
 }
 
 .navUl li:hover {
-    color: #2ECBF7;
+    color: var(--azul);
     text-decoration: underline;
 }
