@@ -1,0 +1,12 @@
+.professores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.professores h2{
+        color: var(--azul);
+        font-family: 'Kanit';
+        font-size: 45px;
+        margin-bottom: 25px;
+}
