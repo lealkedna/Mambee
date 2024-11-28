@@ -25,6 +25,14 @@
     max-width: 1200px; 
 }
 
+.info_email a,
+.info_endereco,
+.info_instagram a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .info_email,
 .info_instagram {
     min-width: 350px; 

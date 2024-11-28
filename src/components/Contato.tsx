@@ -13,23 +13,23 @@ function Contato() {
                     <article className={styles.info_email}>
                     <a href="mailto:mambee.fabrica@gmail.com">
                         <MdOutlineEmail color="#2ECBF7" />
-                        mambee.fabrica@gmail.com
+                        <div>mambee.fabrica@gmail.com</div>
                         </a>
                     </article>
                     <article className={styles.info_instagram}>
                     <a href="https://www.instagram.com/mambeeifpi/"  target="_blank">
                         <FaInstagram color="#2ECBF7"/>
-                        @mambeeifpi
+                        <div>@mambeeifpi</div>
                         </a>
                     </article>
                     
                 </div>
                 <article>
-                    <address className={styles.info_endereco}>
+                    <div className={styles.info_endereco}>
                         < IoLocationOutline color="#2ECBF7" />
                         Av Pedro Marques de Medeiros, s/n - Parque Industrial, Picos - PI, 64605-500<br/>
                         IFPI Campus Picos, Sala E5 (Mambee), Pantanal, Picos - PI
-                    </address>
+                    </div>
                 </article>
             </section>
         </>

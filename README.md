@@ -2,6 +2,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+<h2> Comando de importação dos icons para caso haja erro ao startar a aplicação</h2>
+
+``` bash 
+npm install react-icons --save
+```
+
 First, run the development server:
 
 ```bash
