@@ -22,20 +22,38 @@
     display: flex;
     gap: 15px;
     padding: 20px;
+    max-width: 1200px; 
 }
 
-.contato_opcao {
+.info_email,
+.info_instagram {
+    min-width: 350px; 
     box-sizing: border-box;
-    padding: 15px 15px 15px 15px;
+    padding: 25px;
     color: var(--branco);
-    background-color: var(--fundo);
+    background-color: #10162B;
     border: 2px solid var(--azul);
     border-radius: 15px;
-    padding: 20px;
 }
-.contato_opcao:hover{
+
+.info_endereco {
+    box-sizing: border-box;
+    padding: 20px;
+    color: var(--branco);
+    background-color: #10162B;
+    border-radius: 15px;
+}
+
+.info_email:hover,
+.info_instagram:hover,
+.info_endereco:hover {
     background-color: var(--azul);
     cursor: pointer;
 }
+.info_email:hover svg,
+.info_instagram:hover svg,
+.info_endereco:hover svg {
+    fill: var(--branco) !important; 
+}
 
-.address {}
+
