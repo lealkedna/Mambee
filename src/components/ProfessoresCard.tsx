@@ -13,7 +13,7 @@ export default function ProfessorCard({ image, nome, descricao }: cardProfessore
         <Image className={styles.image_professor} 
             src={image} 
             alt={`Foto de ${nome}`}  
-            width={200}
+            width={100}
             height={100}
         />
         <h3 className={styles.nome}>{nome}</h3>

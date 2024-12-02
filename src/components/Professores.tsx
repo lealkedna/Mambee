@@ -5,22 +5,22 @@ export default function Professores() {
 
     const informacoes = [
         {
-            image: '',
+            image: '/images/aislan.jpeg',
             nome: 'Aislan Rafael',
             descricao: 'Mestre em Engenharia de Software - Professor do IFPI desde de 2007'
         },
         {
-            image: '',
+            image: '/images/jesiel.',
             nome: 'Jesiel Viana',
             descricao: 'Mestre em Engenharia de Software - Professor do IFPI desde de 2016'
         },
         {
-            image: '',
+            image: '/images/joaopaulo.jpg',
             nome: 'João Paulo',
             descricao: 'Pós-Graduado em Engenharia de Produção - Professor do IFPI desde de 2013'
         },
         {
-            image: '',
+            image: '/images/jader.jpg',
             nome: 'Jader Abreu',
             descricao: 'Doutor em Ciência da Computação - Professor do IFPI desde de 2014'
         },
