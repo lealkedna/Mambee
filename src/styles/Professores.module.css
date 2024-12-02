@@ -1,12 +1,58 @@
-.professores{
+.professores {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    background-color: var(--fundo);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
 }
 
-.professores h2{
-        color: var(--azul);
-        font-family: 'Kanit';
-        font-size: 45px;
-        margin-bottom: 25px;
+
+.professores h2 {
+    color: var(--azul);
+    font-family: 'Kanit';
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+.noticia{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+.card {
+    background-color: #1C1B2E;
+    border-radius: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.image_professor {
+    border-radius: 20px;
+}
+
+.nome {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 37px;
+    color: var(--azul);
+}
+
+.descricao {
+
+    font-family: 'Roboto Flex';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 10px;
+    color: var(--branco);
 }

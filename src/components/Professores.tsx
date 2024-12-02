@@ -10,11 +10,6 @@ export default function Professores() {
             descricao: 'Mestre em Engenharia de Software - Professor do IFPI desde de 2007'
         },
         {
-            image: '/images/jesiel.',
-            nome: 'Jesiel Viana',
-            descricao: 'Mestre em Engenharia de Software - Professor do IFPI desde de 2016'
-        },
-        {
             image: '/images/joaopaulo.jpg',
             nome: 'João Paulo',
             descricao: 'Pós-Graduado em Engenharia de Produção - Professor do IFPI desde de 2013'
@@ -23,6 +18,11 @@ export default function Professores() {
             image: '/images/jader.jpg',
             nome: 'Jader Abreu',
             descricao: 'Doutor em Ciência da Computação - Professor do IFPI desde de 2014'
+        },
+        {
+            image: '/images/jesiel-.jpeg',
+            nome: 'Jesiel Viana',
+            descricao: 'Mestre em Engenharia de Software - Professor do IFPI desde de 2016'
         },
     ]
 
