@@ -6,7 +6,7 @@
     font-family: 'Roboto flex';
     font-weight: bold;
     font-style: normal;
-    font-size: 24px;
+    font-size: 19px;
     line-height: 28px;
     text-align: justify;
 }
@@ -14,7 +14,7 @@
 .sec_contato h2 {
     color: var(--azul);
     font-family: 'Kanit';
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 25px;
 }
 
@@ -53,14 +53,12 @@
 }
 
 .info_email:hover,
-.info_instagram:hover,
-.info_endereco:hover {
+.info_instagram:hover {
     background-color: var(--azul);
     cursor: pointer;
 }
 .info_email:hover svg,
-.info_instagram:hover svg,
-.info_endereco:hover svg {
+.info_instagram:hover svg{
     fill: var(--branco) !important; 
 }
 

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from '@/styles/Professores.module.css'
 import ProfessorCard from './ProfessoresCard';
 
@@ -29,6 +30,12 @@ export default function Professores() {
     return (
         <>
               <section className={styles.professores}>
+              <Image className={styles.favo}
+                    src="/images/favoMel.png"
+                    width={120}
+                    height={120}
+                    alt="Favo de mel"
+                />
                 <h2>Nossos Professores</h2>
                 <div className={styles.noticia}>
             {
