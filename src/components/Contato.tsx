@@ -1,5 +1,4 @@
 import styles from '@/styles/Contato.module.css'
-
 import { MdOutlineEmail } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";

@@ -1,0 +1,75 @@
+
+.secaoSobre {
+    padding: 2rem;
+    background-color: var(--fundo);
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+   
+  }
+  
+  
+  .titulo {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00d2ff;
+  }
+  
+  
+  .subtitulo {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+  
+  
+  .conteudo {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  /* Estilo das imagens */
+  /*.imagens {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }*/
+  
+ /* .imagem {
+    border-radius: 10px;
+  } */
+  
+  
+  .texto {
+    flex: 1;
+  }
+  
+  
+  .subtituloTexto {
+    color: #00d2ff;
+    margin-top: 1rem;
+  }
+  
+  
+ .botaoAcao {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background: transparent; 
+  border: 2px solid #00d2ff; 
+  border-radius: 15px; 
+  color: #00d2ff; 
+  font-size: 1rem;
+  
+}
+
+.botaoAcao:hover {
+  background: #00d2ff; 
+  color: white; 
+}
+  
