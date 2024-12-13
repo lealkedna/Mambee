@@ -1,19 +1,46 @@
-import { FaInstagram } from "react-icons/fa";
+import Image from "next/image";
 import styles from '@/styles/Conheca.module.css'
+
 export default function Conheca(){
-    return(
+    return( 
+    
       <section className={styles.secaoSobre}>
       <div className={styles.container}>
-        <h1 className={styles.titulo}>Nos conheça melhor</h1>
-        <p className={styles.subtitulo}>
-          Mambee – escola fábrica de software transformando ideias em soluções
-        </p>
+     
+      <div className={styles.cabecalho}>
+       <div className={styles.textos}>
+      <h1 className={styles.titulo}>Nos conheça melhor</h1>
+      <p className={styles.subtitulo}>
+      Mambee – escola fábrica de software transformando ideias em soluções
+      </p>
+      </div>
+       <Image
+    className={styles.favo}
+    src="/images/favoMel.png"
+    width={120}
+    height={120}
+    alt="Favo de mel"
+  />
+      </div>
+     
 
-        <div className={styles.conteudo}>
-          {/* Imagens colocar  */}
-         
-
-          
+          <div className={styles.conteudo}>
+          <div className="images">
+            <Image
+              src="/images/imagem2.png"
+              alt="Equipe trabalhando"
+              width={500}
+              height={300}
+              className="image"
+            />
+            <Image
+              src="/images/imagem2.png"
+              alt="Laboratório tecnológico"
+              width={500}
+              height={300}
+              className="image"
+            />
+          </div> 
           <div className={styles.texto}>
             <h2 className={styles.subtituloTexto}>Origem:</h2>
             <p>
@@ -39,7 +66,7 @@ export default function Conheca(){
             <h2 className={styles.subtituloTexto}>Impacto nos Alunos:</h2>
             <p>
               Muitos alunos que passaram pela Mambee destacam o laboratório como
-              um divisor de águas na sua formação. A experiência Pratica, aliada ao ambiente de apoio, os preparou para enfrentar os desafios do mercado de trabalho, resultando em sucesso profissional.
+              um divisor de águas na sua formação. A experiência prática, aliada ao ambiente de apoio, os preparou para enfrentar os desafios do mercado de trabalho, resultando em sucesso profissional.
             </p>
 
             <h2 className={styles.subtituloTexto}>Resultados Obtidos:</h2>
@@ -58,7 +85,7 @@ export default function Conheca(){
             <button className={styles.botaoAcao}>Vamos conversar</button>
           </div>
         </div>
-      </div>
+        </div>
     </section>
     );
  

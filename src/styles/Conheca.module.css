@@ -1,4 +1,46 @@
 
+
+.cabecalho {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+ 
+}
+.textos {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  
+} 
+
+.titulo {
+  
+  font-size: 2rem;
+  margin-left: 10%;
+  text-align: center;
+  color: #00d2ff;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  margin-left: 10%; 
+  text-align: center;
+  margin-top: 20px;
+}
+
+.favo {
+  width: 13vw;
+  max-width: 120px;
+  height: auto; 
+  margin-left: 30px;
+}
+@media (max-width: 768px) {
+  .favo {
+    width: 13vw; 
+    max-width: 80px; 
+    margin-right: 2.5rem; 
+  }
+}
 .secaoSobre {
     padding: 2rem;
     background-color: var(--fundo);
@@ -6,55 +48,62 @@
     font-family: Arial, sans-serif;
   }
   
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-   
-  }
-  
-  
-  .titulo {
-    text-align: center;
-    font-size: 2.5rem;
-    color: #00d2ff;
-  }
-  
-  
-  .subtitulo {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-  }
+
   
   
   .conteudo {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
+    display: flex; 
+    gap: 2rem; 
+    align-items: flex-start; 
   }
   
-  /* Estilo das imagens */
-  /*.imagens {
+  .imagens {
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }*/
-  
- /* .imagem {
-    border-radius: 10px;
-  } */
-  
-  
-  .texto {
-    flex: 1;
+    flex-direction: column; 
+    gap: 1rem; 
+    max-width: 500px;
   }
   
+  .image {
+    width: 100%;
+    height: auto;
+    max-width: 500px; 
+  }
   
-  .subtituloTexto {
+  .subtituloTexto { 
+    line-height: 1.6;
     color: #00d2ff;
     margin-top: 1rem;
+    max-width: 500px;
   }
+  
+  .texto { 
+    font-size: 1.2rem;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem; 
+  }
+  .texto p {
+    font-size: 1.2rem;
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+  }
+  @media (max-width: 768px) {
+    .conteudo {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .imagens {
+      max-width: 100%;
+    }
+  
+    .subtituloTexto {
+      max-width: 100%; 
+    }
+  }
+  
+  
   
   
  .botaoAcao {
