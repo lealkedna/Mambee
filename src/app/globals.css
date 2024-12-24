@@ -5,6 +5,7 @@
   --azul: #2ECBF7;
   --branco: #E6F5FF;
   --fundo: #020617;
+  --fundoClaro: #10162B;
 }
 
 @media (prefers-color-scheme: dark) {

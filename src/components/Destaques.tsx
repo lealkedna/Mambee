@@ -30,28 +30,35 @@ export default function Destaques(){
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrev = () => {
-        setCurrentIndex((prev) => (prev === 0 ? noticias.length - 1 : prev - 1));
+        setCurrentIndex((prev) => (prev === 0 ? noticias.length - 3 : prev - 1));
     };
 
     const handleNext = () => {
-        setCurrentIndex((prev) => (prev === noticias.length - 1 ? 0 : prev + 1));
+        setCurrentIndex((prev) => (prev === noticias.length - 3 ? 0 : prev + 1));
     };
 
     return (
         <div className={styles.card_style}>
-            <h2 className={styles.title}>Destaques</h2>
-            <p className={styles.subTitle}>Farol de inovação do IFPI Picos</p>
-            <div className={styles.controls}>
-                <button onClick={handlePrev} className={styles.navButton}>
-                    Anterior
-                </button>
-                <button onClick={handleNext} className={styles.navButton}>
-                    Próximo
-                </button>
-            </div>
+            <header className={styles.header}>
+                <div>
+                    <h2 className={styles.title}>Destaques</h2>
+                    <p className={styles.subTitle}>Farol de inovação do IFPI Picos</p>
+                </div>
+                <div className={styles.controls}>
+                    <button onClick={handlePrev} className={styles.navButton}>
+                        &lt;
+                        Anterior
+                    </button>
+                    <button onClick={handleNext} className={styles.navButton}>
+                        Próximo
+                        &gt;
+                    </button>
+                </div>
+            </header>
             <div className={styles.noticia}>
-            {
-                noticias.map((noticia, index)=>( 
+            { noticias
+                .slice(currentIndex, currentIndex + 3)
+                .map((noticia, index)=>( 
                     <CardDestaques 
                         key={index}
                         image={noticia.image}
