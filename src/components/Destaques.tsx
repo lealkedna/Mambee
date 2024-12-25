@@ -6,6 +6,16 @@ import styles from "@/styles/Destaques.module.css"
 export default function Destaques(){
     const noticias  = [
         {
+            image: '/images/noticias/startupN.jpeg',
+            desc: 'Campus Picos se destaca no Startup Nordeste 2024',
+            link: 'https://www.ifpi.edu.br/picos/noticias/campus-picos-se-destaca-no-startup-nordeste-2024'
+        },
+        {
+            image: '/images/noticias/jornal-elpais.jpg',
+            desc: 'Las caras del éxito del programa brasileño contra la probreza',
+            link: 'https://elpais.com/america/2024-09-01/gracias-a-bolsa-familia-menos-hijos-heredan-la-miseria-en-brasil.html'
+        },
+        {
             image: '/images/noticias/jader 1.jpg',
             desc: 'Professor de Picos lança  livro sobre Gameficação no SALIPI',
             link: 'https://www.ifpi.edu.br/picos/noticias/professor-de-picos-lanca-livro-sobre-gameficacao-no-salipi'
@@ -16,15 +26,15 @@ export default function Destaques(){
             link: 'https://medium.com/@jesielviana/aprenda-programar-com-javascript-4316228b695d'
         },
         {
+            image: '/images/noticias/boletimS.jpeg',
+            desc: 'Projeto de extensão do IFPI de Picos funciona como empresa real e trabalha tecnologia e inovação',
+            link: 'https://www.boletimdosertao.com.br/projeto-de-extensao-do-ifpi-de-picos-funciona-como-empresa-real-e-trabalha-tecnologia-e-inovacao/'
+        },
+        {
             image: '/images/noticias/cesarMambee.jpeg',
             desc: 'Do CESAR para Picos: professores desenvolvem laboratório de referência no Piauí',
             link: 'https://www.cesar.school/do-cesar-para-picos-professores-desenvolvem-laboratorio-de-referencia-no-piaui/'
-        },
-        {
-            image: '/images/noticias/jornal-elpais.jpg',
-            desc: 'Las caras del éxito del programa brasileño contra la probreza',
-            link: 'https://elpais.com/america/2024-09-01/gracias-a-bolsa-familia-menos-hijos-heredan-la-miseria-en-brasil.html'
-        },
+        }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
