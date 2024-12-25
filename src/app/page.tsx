@@ -5,6 +5,7 @@ import Contato from "@/components/Contato";
 import Professores from "@/components/Professores";
 import Destaques from "@/components/Destaques";
 import Conheca from "@/components/Conheca";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Destaques/>
         <Professores/>
         <Contato/> 
+        <Footer/>
       </main>
     </div>
   );
