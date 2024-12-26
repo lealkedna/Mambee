@@ -13,7 +13,7 @@ export default function Home() {
     <div >
       <main >
         <Nav/>
-        <Conheca/>
+        {/* <Conheca/> */}
         <Parceiros/>
         <Destaques/>
         <Professores/>

@@ -36,6 +36,64 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-
     color: var(--branco);
 }
+
+.card{
+  padding: 50px;
+  border-radius: 32px;
+  box-shadow: 0 4px 8px var(--branco);
+}
+
+.card .hex_grid{
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-template-rows: repeat(4, 43.3px);
+  gap: 3px;
+}
+
+.card .hex_grid .hex{
+  height: 48px;
+  width: 50px;
+  background-color: var(--fundoClaro);
+  clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+  transition: all 0.3s;
+}
+
+.card .hex_grid .hex:nth-child(2n -1){
+  margin-top: 22px;
+}
+.card .hex_grid .hex:hover{
+  transform: scale(1.1);
+  background-color: var(--azul);
+}
+  .virtex {
+    background: url('/images/parceiros/virtex.svg') no-repeat center;
+    background-size: contain;
+  }
+  
+  .labitec {
+    background: url('/images/parceiros/labitec.svg') no-repeat center;
+    background-size: contain;
+  }
+  
+  .petetech {
+    background: url('/images/parceiros/pete.svg') no-repeat center;
+    background-size: contain;
+  }
+  
+  .valedomel {
+    background: url('/images/parceiros/valeDoMel.svg') no-repeat center;
+    background-size: contain;
+  }
+  
+  .ifpi {
+    background: url('/images/parceiros/ifpi Picos.svg') no-repeat center;
+    background-size: contain;
+  }
+  
+  .ibict {
+    background: url('/images/parceiros/ibict.svg') no-repeat center;
+    background-size: contain;
+  } 
+  

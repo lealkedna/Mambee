@@ -19,6 +19,17 @@ function Parceiros(){
                     indústria de forma inovadora e eficiente.
                 </p>
             </aside>
+            <section className={styles.card}>
+            <div className={styles.hex_grid}>
+          {/* Hexágonos */}
+                <div className={`${styles.hex} ${styles.virtex}`}></div>
+                <div className={`${styles.hex} ${styles.labitec}`}></div>
+                <div className={`${styles.hex} ${styles.petetech}`}></div>
+                <div className={`${styles.hex} ${styles.valedomel}`}></div>
+                <div className={`${styles.hex} ${styles.ifpi}`}></div>
+                <div className={`${styles.hex} ${styles.ibict}`}></div>
+            </div>
+            </section>
         </div>
     );
 }
