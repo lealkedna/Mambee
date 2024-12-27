@@ -1,0 +1,87 @@
+.twoColumns {
+    display: flex;
+    justify-content: center;
+    margin: 70px;
+}
+
+.leftColumn {
+    width: 50%;
+}
+
+.rightColumn {
+    width: 50%;
+}
+
+.botaoProcesso {
+    padding: 0.8rem 1.5rem;
+    background: transparent; 
+    border: 2px solid #00d2ff; 
+    border-radius: 15px; 
+    color: #00d2ff; 
+    font-size: 1rem;
+    
+  }
+  
+  .botaoAcao:hover {
+    background: #00d2ff; 
+    color: white; 
+  }
+
+  .h1Processo{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00d2ff;
+    padding-bottom: 20px;
+  }
+
+  .paragrafoP{
+    text-align: justify;
+    width: 70%;
+    line-height: 1.5em;
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+
+  .imageProcesso{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .h3Processo{
+    color:#2ECBF7;
+    font-weight: bold;
+    font-size: 25px;
+    padding-bottom: 15px;
+  }
+    
+  .favoProcesso{
+    width: 13vw;
+    max-width: 120px;
+    height: auto; 
+    margin-left: 30px;
+    transform: rotate(182deg);
+  }
+  @media (max-width: 768px) {
+    .favoProcesso {
+      width: 13vw; 
+      max-width: 80px; 
+      margin-right: 2.5rem; 
+    }
+  }
+
+
+  /* .align{
+    display:flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .inicio{
+  height: 100vh;
+  width:100% ;
+  background-image:url('/mambee/public/images/inicio.png') ;
+  background-size: 150%; 
+  background-repeat: no-repeat; 
+  
+  } */
