@@ -1,6 +1,6 @@
 .card_style{
     width: 100%;
-    max-width: 1200px;
+    height: auto;
     margin:  50px;
     text-align: center;
     padding: 20px;
@@ -35,6 +35,7 @@
 .controls {
     display: flex;
     gap: 10px;
+    padding-right: 50px;
 }
 
 .controls .navButton {
@@ -62,8 +63,8 @@
 
 .noticia{
     display: flex;
-    justify-content: center;
-    gap: 40px;
+    /* justify-content: center; */
+    gap: 30px;
     overflow: hidden; 
     margin: 20px 0;
 }

@@ -38,13 +38,15 @@ export default function Destaques(){
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const noticiasPorPagina = 3;
+    const dots = noticias.length - noticiasPorPagina + 1;
 
     const handlePrev = () => {
-        setCurrentIndex((prev) => (prev === 0 ? noticias.length - 3 : prev - 1));
+        setCurrentIndex((prev) => (prev === 0 ? dots - 1 : prev - 1));
     };
 
     const handleNext = () => {
-        setCurrentIndex((prev) => (prev === noticias.length - 3 ? 0 : prev + 1));
+        setCurrentIndex((prev) => (prev === dots - 1 ? 0 : prev + 1));
     };
 
     return (
@@ -67,7 +69,7 @@ export default function Destaques(){
             </header>
             <div className={styles.noticia}>
             { noticias
-                .slice(currentIndex, currentIndex + 3)
+                .slice(currentIndex, currentIndex + noticiasPorPagina)
                 .map((noticia, index)=>( 
                     <CardDestaques 
                         key={index}
@@ -78,7 +80,7 @@ export default function Destaques(){
             }
             </div>
             <div className={styles.dots}>
-                {noticias.map((_, index) => (
+            {Array.from({ length: dots }, (_, index) => (
                     <span
                         key={index}
                         className={`${styles.dot} ${currentIndex === index ? styles.active : ''}`}

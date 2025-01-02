@@ -16,7 +16,7 @@ export default function CardDestaques({ image, desc, link }: novoDestaqueProps) 
                 alt="imagem da noticia"
             />
                 <p className={styles.desc}>{desc}</p>
-                <a href={link} className={styles.link}>Ler mais</a>
+                <a href={link} className={styles.link} target="blank">Ler mais</a>
         </div>
     )
 }
