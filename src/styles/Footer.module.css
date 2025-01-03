@@ -83,4 +83,27 @@
     line-height: 23px;
 }
 
+@media (max-width: 768px) {
+   .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 10px;
+}
+    .navUl{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+      .redesSociais {
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          flex-wrap: wrap;
+          margin-top: 10px;
+        }
+        .redesSociais p {
+            flex-basis: 100%; 
+            text-align: left;
+        }
+    }
 
