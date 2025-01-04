@@ -8,6 +8,7 @@
 
 .header {
     display: flex;
+    position: relative;
     justify-content: space-between;
     align-items: center; 
     margin-bottom: 20px;
@@ -35,7 +36,7 @@
 .controls {
     display: flex;
     gap: 10px;
-    padding-right: 50px;
+    padding-right: 9rem;
 }
 
 .controls .navButton {
@@ -81,7 +82,7 @@
     overflow: hidden; 
     box-sizing: border-box;
     width: 300px;
-    padding: 5px;
+    /* padding: 5px; */
     transition: transform 0.3s ease;
 }
 .image_card{
@@ -90,6 +91,7 @@
     border-top-left-radius: 10px; 
     border-top-right-radius: 10px; 
     object-fit: cover; 
+    transition: none;
 }
 
 .desc{
@@ -104,7 +106,7 @@
 
 .link {
     display: block;
-    margin-top: 10px;
+    margin: 0 0.5rem 0.5rem;
     padding: 8px 15px;
     color: var(--azul);
     text-decoration: none;
@@ -145,4 +147,25 @@
 
 .dot.active {
     background-color: var(--azul); 
+}
+
+@media (max-width: 768px){
+    .header{
+        gap: 40px;
+    }
+    .title{
+        font-size: 29px;
+        margin-left: -40px;
+    }
+    .subTitle{
+        font-size: 12px;
+        text-align: left; 
+        margin-left: -40px;
+    }
+    
+    .controls .navButton {
+        padding: 5px 10px;
+        font-size: 10.5px;
+    
+    }
 }
