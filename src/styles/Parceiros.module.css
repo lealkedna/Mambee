@@ -25,6 +25,7 @@
 .aside{
  display: flex;
  padding-left: 200px;
+ justify-content: center;
 }
 
 .text{
