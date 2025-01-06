@@ -19,7 +19,7 @@
     font-family: 'Kanit';
     font-style: normal;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 50px;
     text-align: left;
     margin-left: 20px;
 }
@@ -28,9 +28,10 @@
     font-family: 'Kanit';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 25px;
     text-align: left; 
     margin-left: 20px;
+    margin-top: -15px;
 }
 
 .controls {
@@ -154,18 +155,19 @@
         gap: 40px;
     }
     .title{
-        font-size: 29px;
+        font-size: 30px;
         margin-left: -40px;
     }
     .subTitle{
-        font-size: 12px;
+        font-size: 15px;
         text-align: left; 
         margin-left: -40px;
+        margin-top: -0.1px;
     }
     
     .controls .navButton {
         padding: 5px 10px;
         font-size: 10.5px;
-    
+        border-radius: 5px;
     }
 }
