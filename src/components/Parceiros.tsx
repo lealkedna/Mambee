@@ -18,13 +18,23 @@ function Parceiros(){
                     com as habilidades e experiências necessárias para enfrentar desafios da <br/>
                     indústria de forma inovadora e eficiente.
                 </p>
-                <Image 
-                    src="/images/parceiros/Favo de mel Parceiros.svg"
-                    alt="Favos dos parceiros"
-                    width={1120}
-                    height={710}
-                    className={styles.image}
-                />
+                <div className={styles.image_container}>
+                    <Image 
+                        src="/images/parceiros/Favo de mel Parceiros.svg"
+                        alt="Favos dos parceiros"
+                        width={1120}
+                        height={710}
+                        className={styles.image_desktop}
+                    />
+                    <Image 
+                        src="/images/parceiros/FavoMobile.svg"
+                        alt="Favos dos parceiros"
+                        width={272}
+                        height={392.74}
+                        className={styles.image_mobile}
+                    />
+
+                </div>
             </aside>
         </div>
     );

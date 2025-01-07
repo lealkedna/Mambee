@@ -36,14 +36,24 @@
   line-height: 21px;
   color: var(--branco);
   position: absolute;
-  width: 50%;
+  width: 75%;
 }
 
-.image{
+.image_container{
+  position: relative;
+}
+
+.image_desktop{
+  display: block;
   z-index: -1;
+  width: 100%;
+  position: relative;
+}
+.image_mobile{
+  display: none;
 }
 
-@media (max-width: 768px){
+@media (max-width: 600px){
   .header{
       margin: 20px;
   }
@@ -53,7 +63,27 @@
   .subTitle{
     font-size: 17px;
   }
+  .aside{
+    flex-direction: column;
+    padding-left: 0;
+  }
   .text{
-    
+    position: relative;
+    left: 0;
+    z-index: 1;
+    font-size: 10px;
+    line-height: 12px;
+    width: 100%;
+    left: 0;
+    padding-left: 18px;
+  }
+  .image_desktop{
+    display: none;
+  }
+  .image_mobile{
+    display: block;
+    z-index: 0;
+    width: 100%;
+    position: relative;
   }
 }
