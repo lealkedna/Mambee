@@ -171,3 +171,21 @@
         border-radius: 5px;
     }
 }
+
+@media (max-width: 600px) {
+    .noticia{
+        margin-left: -25px;
+    }
+    .noticia > div {
+        flex: 0 0 85%; 
+        max-width: 100%;
+        transition: transform 0.5s ease;
+    }
+    .desc {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .dots{
+        margin-left: -60px;
+    }
+}

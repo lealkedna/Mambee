@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CardDestaques from "./CardDestaques";
 import styles from "@/styles/Destaques.module.css"
 export default function Destaques(){
@@ -38,7 +38,23 @@ export default function Destaques(){
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const noticiasPorPagina = 3;
+    const [noticiasPorPagina, setNoticiasPorPagina] = useState(3);
+
+    // const noticiasPorPagina = 3;
+
+    useEffect(() => {
+        const updateNoticiasPorPagina = () => {
+            setNoticiasPorPagina(window.innerWidth <= 768 ? 1 : 3);
+        };
+
+        updateNoticiasPorPagina();
+        window.addEventListener("resize", updateNoticiasPorPagina); 
+
+        return () => {
+            window.removeEventListener("resize", updateNoticiasPorPagina);
+        };
+    }, []);
+
     const dots = noticias.length - noticiasPorPagina + 1;
 
     const handlePrev = () => {
