@@ -6,7 +6,7 @@ import { IoLocationOutline } from "react-icons/io5";
 function Contato() {
     return (
         <>
-            <section className={styles.sec_contato}>
+            <section id='Contato' className={styles.sec_contato}>
                 <h2>Vamos Conversar?</h2>
                 <div className={styles.contato}>
                     <article className={styles.info_email}>
