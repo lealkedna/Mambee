@@ -1,4 +1,4 @@
-//import Image from "next/image";
+import Image from "next/image";
 import styles from "./page.module.css";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header"
@@ -18,29 +18,20 @@ export default function Home() {
           <Header />
           <Nav />
         </div>
-        {/* <section className={styles.inicio}>
-         
-         <Image
-                src="/images/Favo-de-mel.png"
-                width={100}
-                height={100}
-                alt="Favo de Mel"
-              />
-        </section> */}
         <section className={styles.inicio}>
-          {/* <div className={styles.hexagonContainer}>
-            <div className={styles.hexagon}>
-              <h1>Mambee</h1>
-              <p>Fábrica Escola de Software</p>
-            </div>
-            <div className={styles.hexagon}>
-              <h2>Sobre nós</h2>
-              <p>Ambiente prático e inovador para preparar estudantes...</p>
-            </div>
-            <div className={styles.hexagon}>
-              <button>Contate-nos</button>
-            </div>
-          </div> */}
+          <div className={styles.overlay}>
+            <Image
+              src="/images/favoInicio.png"
+              width={1000}
+              height={1000}
+              quality={100}
+              layout="responsive" //adicionei esse atributo para  gerar imagens otimizadas e consequentimente melhorar a performace
+              alt="Hexágono Mambee"
+              className={styles.hexImage}
+            />
+            <button className={styles.contactButton}>Contate-nos</button>
+          </div>
+
         </section>
 
         <Conheca />

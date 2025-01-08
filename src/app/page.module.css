@@ -180,6 +180,7 @@ a.secondary {
 }
 
 .inicio {
+  position: relative;
   height: 90vh;
   width: 100%;
   background-image: url('/images/inicio.png');
@@ -188,4 +189,61 @@ a.secondary {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  width: 50%;
+  height: auto;
+}
+
+.hexImage {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+ 
+}
+
+@media (max-width: 768px) {
+  .hexImage {
+    width: 70%; /* Ajusta o tamanho para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .hexImage {
+    width: 90%; 
+  }
+  .contactButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+.contactButton {
+  position: relative;
+  background-color: #00d2ff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 200px;
+}
+
+.contactButton:hover {
+  /* background-color: #00d2ff; */
+  transform: scale(1.05);
+}
+
+.contactButton:active {
+  background-color: #003f7f;
+  transform: scale(0.95);
 }
