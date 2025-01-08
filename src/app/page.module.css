@@ -196,6 +196,8 @@ a.secondary {
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   left: 0;
   width: 50%;
   height: auto;
@@ -206,23 +208,6 @@ a.secondary {
   height: auto;
   max-width: 100%;
  
-}
-
-@media (max-width: 768px) {
-
-  .hexImage {
-    width: 70%; /* Ajusta o tamanho para telas menores */
-  }
-}
-
-@media (max-width: 480px) {
-  .hexImage {
-    width: 90%; 
-  }
-  .contactButton {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
 }
 
 .contactButton {
@@ -237,6 +222,9 @@ a.secondary {
   cursor: pointer;
   transition: all 0.3s ease;
   width: 200px;
+  top: 1%; 
+  left: 1%; 
+  transform: translate(-62%, -282%);
 }
 
 .contactButton:hover {
@@ -248,3 +236,30 @@ a.secondary {
   background-color: #003f7f;
   transform: scale(0.95);
 }
+
+@media (max-width: 768px) {
+
+  .hexImage {
+    width: 70%; /* Ajusta o tamanho para telas menores */
+  }
+  /* .contactButton{
+    width: 150px;
+    font-size: 16px;
+    padding: 10px 15px;
+  } */
+  .contactButton{
+   display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hexImage {
+    width: 90%; 
+  }
+  /* .contactButton {
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 120px;
+  } */
+}
+
