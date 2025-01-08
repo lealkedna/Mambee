@@ -209,6 +209,7 @@ a.secondary {
 }
 
 @media (max-width: 768px) {
+
   .hexImage {
     width: 70%; /* Ajusta o tamanho para telas menores */
   }

@@ -1,8 +1,8 @@
 "use client"; 
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import styles from "@/styles/Nav.module.css";
 
-import styles from "@/styles/Nav.module.css"
 function Nav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
