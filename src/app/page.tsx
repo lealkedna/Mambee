@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import styles from "./page.module.css";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header"
@@ -19,16 +19,23 @@ export default function Home() {
           <Nav />
         </div>
         <section className={styles.inicio}>
-          {/* <p>lorem*20</p> */}
-         {/* <Image
-                src="/images/Favo-de-mel.png"
-                width={100}
-                height={100}
-                alt="Favo de Mel"
-              /> */}
+          <div className={styles.overlay}>
+            <Image
+              src="/images/favoInicio.png"
+              width={1000}
+              height={1000}
+              quality={100}
+              layout="responsive" //adicionei esse atributo para  gerar imagens otimizadas e consequentimente melhorar a performace
+              alt="Hexágono Mambee"
+              className={styles.hexImage}
+            />
+            <button className={styles.contactButton}>Contate-nos</button>
+          </div>
+
         </section>
-        <Conheca/>
-        <Processo/>
+
+        <Conheca />
+        <Processo />
         <Parceiros />
         <Destaques />
         <Professores />

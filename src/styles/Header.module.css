@@ -7,3 +7,11 @@
     width: 100%;
     /* background-color: azure; */
 }
+
+@media (max-width: 768px) {
+    .header {
+        justify-content: left; 
+        padding-left: 0;
+    }
+
+}
