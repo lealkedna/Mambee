@@ -31,10 +31,6 @@
   color: var(--branco);
 }
 .favo {
-  /* width: 13vw;
-  max-width: 120px;
-  height: auto; 
-  margin-left: 30px; */
     position: relative;
     right: 0;
     left: 25rem;
@@ -55,9 +51,6 @@
 }
 
 .texto {
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column;  */
   font-family: 'Roboto Flex';
   font-style: normal;
   font-weight: 500;
@@ -80,7 +73,7 @@
   margin-top: 2rem;
   padding: 10px;
   background: transparent; 
-  color: #00d2ff; 
+  color: var(--azul); 
   font-size: 1rem;
   width: 175px;
   border: 2px solid var(--azul);
@@ -90,6 +83,36 @@
 .botaoAcao:hover {
   background: var(--azul); 
   color: var(--branco); 
+}
+
+@media (max-width: 768px){
+  .cabecalho{
+    padding: 25px;
+  }
+  .titulo{
+    font-size: 20px;
+  }
+  .subtitulo{
+    font-size: 14px;
+  }
+  .favo{
+    width: 75px;
+    height: 75px;
+    left: 8rem;
+  }
+  .conteudo{
+    flex-direction: column;
+  }
+  .secaoSobre{
+    border-radius: 15px;
+  }
+  .botaoAcao{
+    width: 300px;
+  }
+  .image{
+    width: 300px;
+    height: auto;
+  }
 }
 /* 
 @media (max-width: 768px) {
