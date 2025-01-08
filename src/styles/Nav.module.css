@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap');
 
-.nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--fundo);
-    color: var(--branco);
-    width: 100%;
-    font-family: 'Roboto Flex', sans-serif;
+.nav{
+    padding-right: 100px;
 }
 
 .navList{

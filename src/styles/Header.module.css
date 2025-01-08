@@ -1,0 +1,9 @@
+.header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 100px;
+    padding-top: 10px;
+    width: 100%;
+    /* background-color: azure; */
+}

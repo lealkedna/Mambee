@@ -56,6 +56,12 @@
   font-weight: 600;
 }
 
+.align{
+  display:flex;
+  align-items: center;
+  list-style: none;
+}
+
 .ctas {
   display: flex;
   gap: 16px;
@@ -165,4 +171,19 @@ a.secondary {
   .logo {
     filter: invert();
   }
+}
+
+.align{
+  display:flex;
+  align-items: center;
+  list-style: none;
+}
+
+.inicio{
+height: 100vh;
+width:100% ;
+background-image:url('/mambee/public/images/inicio.png') ;
+background-size: 150%; 
+background-repeat: no-repeat; 
+
 }
