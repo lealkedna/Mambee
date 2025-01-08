@@ -6,7 +6,7 @@ import Parceiros from "@/components/Parceiros";
 import Contato from "@/components/Contato";
 import Professores from "@/components/Professores";
 import Destaques from "@/components/Destaques";
-// import Conheca from "@/components/Conheca";
+import Conheca from "@/components/Conheca";
 import Footer from "@/components/Footer";
 import Processo from "@/components/Processo";
 
@@ -27,7 +27,7 @@ export default function Home() {
                 alt="Favo de Mel"
               /> */}
         </section>
-        {/* <Conheca/> */}
+        <Conheca/>
         <Processo/>
         <Parceiros />
         <Destaques />
