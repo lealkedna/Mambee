@@ -1,16 +1,31 @@
+"use client"; 
+import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 import styles from "@/styles/Nav.module.css"
-function Nav(){
-    return(
-        <div className={styles.nav}>
-        <nav className={styles.navList}>
-            <ul className={styles.navUl}>
-                <li>Início</li>
-                <li>Projetos</li>
-                <li>Egressos</li>
-            </ul>
-        </nav>
+function Nav() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+    
+    return (
+        <div className={styles.nav}>
+          
+            <button className={styles.hamburger} onClick={toggleMenu}>
+            <GiHamburgerMenu />
+            </button>
+            
+                <nav className={`${styles.navList} ${
+                    isMenuOpen ? styles.open : ""
+                }`}>
+                    <ul className={styles.navUl}>
+                        <li onClick={toggleMenu}>Início</li>
+                        <li onClick={toggleMenu}>Projetos</li>
+                        <li onClick={toggleMenu}>Egressos</li>
+                    </ul>
+                </nav>
         </div>
     );
 }
