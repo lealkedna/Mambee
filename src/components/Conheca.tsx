@@ -30,14 +30,14 @@ export default function Conheca() {
               alt="Equipe trabalhando"
               width={500}
               height={300}
-              className="image"
+              className={styles.image}
             />
             <Image
               src="/images/Imagem (1).svg"
               alt="Laboratório tecnológico"
               width={500}
               height={300}
-              className="image"
+              className={styles.image}
             />
           </div>
           <div className={styles.texto}>
