@@ -179,11 +179,13 @@ a.secondary {
   list-style: none;
 }
 
-.inicio{
-height: 100vh;
-width:100% ;
-background-image:url('/mambee/public/images/inicio.png') ;
-background-size: 150%; 
-background-repeat: no-repeat; 
-
+.inicio {
+  height: 90vh;
+  width: 100%;
+  background-image: url('/images/inicio.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
