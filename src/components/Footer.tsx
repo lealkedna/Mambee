@@ -21,10 +21,10 @@ function Footer(){
                         </ul>
                     </nav>
                 <div className={styles.redesSociais}>
-                <a href="https://www.youtube.com/@Mambee"  target="_blank">
+                <a href="https://www.youtube.com/@Mambee"  target="_blank" aria-label="Para conhecer nosso canal no youtube">
                     <FaYoutube color="#2ECBF7"/>
                 </a>
-                <a href="https://github.com/mambee-ifpi-picos"  target="_blank">
+                <a href="https://github.com/mambee-ifpi-picos"  target="_blank" aria-label="Para acessar nosso repositório do github">
                     <FaGithub color="#2ECBF7"/>
                 </a>
                     <p> Copyrigth © Mambee 2024 </p>

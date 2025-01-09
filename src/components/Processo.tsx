@@ -5,7 +5,7 @@ function Processo() {
     return (
         <div className={styles.twoColumns}>
             <div className={styles.leftColumn}>
-                <h1 className={styles.processHeading}>Processo</h1>
+                <h2 className={styles.processHeading}>Processo</h2>
                 <p className={styles.processParagraph}>Como uma equipe de desenvolvimento, nós utilizamos um método de desenvolvimento ágil baseada no scrum, onde após o planejamento, o desenvolvimento e avaliação se tornam um ciclo constante até a finalização do produto.</p>
                 <button className={styles.buttonOutline}>Nosso último projeto</button>
                 <Image

@@ -10,13 +10,13 @@ function Contato() {
                 <h2>Vamos Conversar?</h2>
                 <div className={styles.contato}>
                     <article className={styles.info_email}>
-                    <a href="mailto:mambee.fabrica@gmail.com">
+                    <a href="mailto:mambee.fabrica@gmail.com" aria-label="Redireciona para enviar um email">
                         <MdOutlineEmail color="#2ECBF7" />
                         <div>mambee.fabrica@gmail.com</div>
                         </a>
                     </article>
                     <article className={styles.info_instagram}>
-                    <a href="https://www.instagram.com/mambeeifpi/"  target="_blank">
+                    <a href="https://www.instagram.com/mambeeifpi/"  target="_blank" aria-label="Redireciona para o Instagram">
                         <FaInstagram color="#2ECBF7"/>
                         <div>@mambeeifpi</div>
                         </a>
