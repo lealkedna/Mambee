@@ -1,5 +1,5 @@
 import Image from "next/image"
-import styles from "@/styles/Professores.module.css"
+import Card from "./layout/Card";
 
 interface cardProfessoresProps {
   image: string,
@@ -9,15 +9,17 @@ interface cardProfessoresProps {
 
 export default function ProfessorCard({ image, nome, descricao }: cardProfessoresProps) {
   return (
-    <div className={styles.card}>
-        <Image className={styles.image_professor}
-          src={image}
-          alt={`Foto de ${nome}`}
-          width={150}
-          height={150}
-        />
-        <h3 className={styles.nome}>{nome}</h3>
-        <p className={styles.descricao}>{descricao}</p>
-    </div>
+    <Card className="flex flex-col items-center p-4">
+        <div className="w-40 h-40 rounded-2xl overflow-hidden">
+          <Image className="h-full w-full object-cover"
+            src={image}
+            alt={`Foto de ${nome}`}
+            width={150}
+            height={150}
+          />
+        </div>
+        <h3 className="text-azul text-lg font-bold">{nome}</h3>
+        <p className="text-sm font-bold">{descricao}</p>
+    </Card>
   );
 }

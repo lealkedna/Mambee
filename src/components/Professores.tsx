@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import styles from '@/styles/Professores.module.css'
 import ProfessorCard from './ProfessoresCard';
+import Title1 from './text/Title1';
 
 export default function Professores() {
 
@@ -29,27 +29,27 @@ export default function Professores() {
 
     return (
         <>
-              <section className={styles.professores}>
-              <Image className={styles.favo}
+            <section className="relative w-full max-w-7xl mx-auto">
+                <Image className="absolute top-[-50px] right-0 hidden md:block"
                     src="/images/favoMel.png"
                     width={120}
                     height={120}
                     alt="Favo de mel"
                 />
-                <h2>Nossos Professores</h2>
-                <div className={styles.noticia}>
-            {
-                informacoes.map((info, index)=>( 
-                    <ProfessorCard 
-                        key={index}
-                        image={info.image}
-                        nome={info.nome}
-                        descricao={info.descricao}
-                      />
-                ))
-            }
-            </div>
-              </section>
+                <Title1 className='text-center'>Nossos Professores</Title1>
+                <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-4 p-5">
+                    {
+                        informacoes.map((info, index) => (
+                            <ProfessorCard
+                                key={index}
+                                image={info.image}
+                                nome={info.nome}
+                                descricao={info.descricao}
+                            />
+                        ))
+                    }
+                </div>
+            </section>
         </>
     )
 }
