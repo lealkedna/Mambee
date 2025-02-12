@@ -7,22 +7,23 @@
 @tailwind utilities;
 
 :root {
-  --background: #020617;
-  --foreground: #E6F5FF;
-  --azul: #2ECBF7;
-  --branco: #E6F5FF;
-  --fundo: #020617;
-  --fundoClaro: #10162B;
+  --background: #EFF1F3;
+  --foreground: #000000;
+  --rosa: #8D5471;
+  --azul: #54A6BD;
+  --fundo: #EFF1F3;
+  --fundoClaro: #ffffff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #020617;
-    --foreground: #E6F5FF;
-    --azul: #2ECBF7;
-    --branco: #E6F5FF;
-    --fundo: #020617;
-    --fundoClaro: #10162B;
+    --background: #EFF1F3;
+    --foreground: #000000;
+    --rosa: #8D5471;
+    --azul: #54A6BD;
+    --fundo: #EFF1F3;
+    --fundoClaro: #ffffff;
+    --hoverRosa: #6D3E56;
   }
 }
 

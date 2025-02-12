@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Card from "./layout/Card";
+import PrimaryButton from "./button/PrimaryButton";
 
 interface novoDestaqueProps {
     image: string;
@@ -8,7 +10,7 @@ interface novoDestaqueProps {
 
 export default function CardDestaques({ image, desc, link }: novoDestaqueProps) {
     return (
-        <div className="rounded-lg bg-fundoClaro grid grid-rows-2 overflow-hidden">
+        <Card className="grid grid-rows-2 overflow-hidden">
             <div className="h-52">
                 <Image
                     className="w-full h-full object-cover"
@@ -24,11 +26,11 @@ export default function CardDestaques({ image, desc, link }: novoDestaqueProps) 
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-azul font-bold hover:underline"
+                    className="font-bold hover:underline w-40 mx-auto"
                 >
-                    Ler mais
+                    <PrimaryButton>Ler mais</PrimaryButton>
                 </a>
             </div>
-        </div>
+        </Card>
     );
 }

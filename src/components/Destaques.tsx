@@ -2,39 +2,19 @@
 
 import { useState, useEffect } from "react";
 import CardDestaques from "./CardDestaques";
+import Title1 from "./text/Title1";
+import Subtitle from "./text/Subtitle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export default function Destaques() {
     const noticias = [
-        {
-            image: "/images/noticias/startupN.jpeg",
-            desc: "Campus Picos se destaca no Startup Nordeste 2024",
-            link: "https://www.ifpi.edu.br/picos/noticias/campus-picos-se-destaca-no-startup-nordeste-2024",
-        },
-        {
-            image: "/images/noticias/jornal-elpais.jpg",
-            desc: "Las caras del éxito del programa brasileño contra la probreza",
-            link: "https://elpais.com/america/2024-09-01/gracias-a-bolsa-familia-menos-hijos-heredan-la-miseria-en-brasil.html",
-        },
-        {
-            image: "/images/noticias/jader 1.jpg",
-            desc: "Professor de Picos lança livro sobre Gameficação no SALIPI",
-            link: "https://www.ifpi.edu.br/picos/noticias/professor-de-picos-lanca-livro-sobre-gameficacao-no-salipi",
-        },
-        {
-            image: "/images/noticias/livro.jpg",
-            desc: "Lançamento do e-book Aprenda Programar com JavaScript",
-            link: "https://medium.com/@jesielviana/aprenda-programar-com-javascript-4316228b695d",
-        },
-        {
-            image: "/images/noticias/boletimS.jpeg",
-            desc: "Projeto de extensão do IFPI de Picos funciona como empresa real e trabalha tecnologia e inovação",
-            link: "https://www.boletimdosertao.com.br/projeto-de-extensao-do-ifpi-de-picos-funciona-como-empresa-real-e-trabalha-tecnologia-e-inovacao/",
-        },
-        {
-            image: "/images/noticias/cesarMambee.jpeg",
-            desc: "Do CESAR para Picos: professores desenvolvem laboratório de referência no Piauí",
-            link: "https://www.cesar.school/do-cesar-para-picos-professores-desenvolvem-laboratorio-de-referencia-no-piaui/",
-        },
+        { image: "/images/noticias/startupN.jpeg", desc: "Campus Picos se destaca no Startup Nordeste 2024", link: "https://www.ifpi.edu.br/picos/noticias/campus-picos-se-destaca-no-startup-nordeste-2024" },
+        { image: "/images/noticias/jornal-elpais.jpg", desc: "Las caras del éxito del programa brasileño contra la pobreza", link: "https://elpais.com/america/2024-09-01/gracias-a-bolsa-familia-menos-hijos-heredan-la-miseria-en-brasil.html" },
+        { image: "/images/noticias/jader 1.jpg", desc: "Professor de Picos lança livro sobre Gameficação no SALIPI", link: "https://www.ifpi.edu.br/picos/noticias/professor-de-picos-lanca-livro-sobre-gameficacao-no-salipi" },
+        { image: "/images/noticias/livro.jpg", desc: "Lançamento do e-book Aprenda Programar com JavaScript", link: "https://medium.com/@jesielviana/aprenda-programar-com-javascript-4316228b695d" },
+        { image: "/images/noticias/boletimS.jpeg", desc: "Projeto de extensão do IFPI de Picos funciona como empresa real e trabalha tecnologia e inovação", link: "https://www.boletimdosertao.com.br/projeto-de-extensao-do-ifpi-de-picos-funciona-como-empresa-real-e-trabalha-tecnologia-e-inovacao/" },
+        { image: "/images/noticias/cesarMambee.jpeg", desc: "Do CESAR para Picos: professores desenvolvem laboratório de referência no Piauí", link: "https://www.cesar.school/do-cesar-para-picos-professores-desenvolvem-laboratorio-de-referencia-no-piaui/" },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -42,7 +22,13 @@ export default function Destaques() {
 
     useEffect(() => {
         const updateNoticiasPorPagina = () => {
-            setNoticiasPorPagina(window.innerWidth <= 768 ? 1 : 3);
+            if (window.innerWidth <= 768) {
+                setNoticiasPorPagina(1);
+            } else if (window.innerWidth <= 1023) {
+                setNoticiasPorPagina(2);
+            } else {
+                setNoticiasPorPagina(3);
+            }
         };
 
         updateNoticiasPorPagina();
@@ -64,26 +50,37 @@ export default function Destaques() {
     };
 
     return (
-        <div className="w-full max-w-7xl mx-auto text-center p-5">
-            <header className="flex justify-between items-center mb-5">
-                <div>
-                    <h2 className="text-4xl font-bold text-azul text-left">Destaques</h2>
-                    <p className="text-xl font-bold text-white text-left mt-[-5px]">Farol de inovação do IFPI Picos</p>
-                </div>
-            </header>
-            <div className="flex justify-between gap-8 overflow-hidden mb-5">
-                <button onClick={handlePrev} className="bg-fundoClaro rounded-lg px-4 py-2 font-bold transition-colors hover:bg-azul hover:text-white">
-                    &lt;
+        <div className="w-full max-w-7xl mx-auto text-center mt-5">
+
+            <div className="flex justify-between gap-4">
+                <button onClick={handlePrev} className="md:hidden text-4xl text-azul bg-fundoClaro rounded-lg px-4 py-2 font-bold transition-colors hover:bg-azul hover:text-white shadow-[0px_4px_4px_rgba(0,0,0,0.1)]">
+                    <FontAwesomeIcon icon={faChevronLeft} />
                 </button>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                
+                <div className="text-center mx-auto">
+                    <Title1>Destaques</Title1>
+                    <Subtitle>Farol de inovação do IFPI Picos</Subtitle>
+                </div>
+
+                <button onClick={handleNext} className="md:hidden text-4xl text-azul bg-fundoClaro rounded-lg px-4 py-2 font-bold transition-colors hover:bg-azul hover:text-white shadow-[0px_4px_4px_rgba(0,0,0,0.1)]">
+                    <FontAwesomeIcon icon={faChevronRight} />
+                </button>
+            </div>
+
+            <div className="flex justify-between gap-8 overflow-hidden mb-5 py-4">
+                <button onClick={handlePrev} className="hidden md:block text-4xl text-azul bg-fundoClaro rounded-lg px-4 py-2 font-bold transition-colors hover:bg-azul hover:text-white shadow-[0px_4px_4px_rgba(0,0,0,0.1)]">
+                    <FontAwesomeIcon icon={faChevronLeft} />
+                </button>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
                     {noticias.slice(currentIndex, currentIndex + noticiasPorPagina).map((noticia, index) => (
                         <CardDestaques key={index} image={noticia.image} desc={noticia.desc} link={noticia.link} />
                     ))}
                 </div>
-                <button onClick={handleNext} className="bg-fundoClaro rounded-lg px-4 py-2 font-bold transition-colors hover:bg-azul hover:text-white">
-                    &gt;
+                <button onClick={handleNext} className="hidden md:block text-4xl text-azul bg-fundoClaro rounded-lg px-4 py-2 font-bold transition-colors hover:bg-azul hover:text-white shadow-[0px_4px_4px_rgba(0,0,0,0.1)]">
+                    <FontAwesomeIcon icon={faChevronRight} />
                 </button>
             </div>
+
             <div className="flex justify-center gap-2 mt-5">
                 {Array.from({ length: dots }, (_, index) => (
                     <span

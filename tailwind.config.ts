@@ -11,11 +11,17 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        rosa: "var(--rosa)",
         azul: "var(--azul)",
+        fundo: "var(--fundo)",
         fundoClaro: "var(--fundoClaro)",
+        hoverRosa: "var(--hoverRosa)",
       },
       fontFamily: {
         kanit: ['Kanit', 'sans-serif'],
+      },
+      screens: {
+        xs: '480px', // Define o breakpoint "xs" para telas menores que 480px
       },
     },
   },
