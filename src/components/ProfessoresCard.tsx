@@ -1,25 +1,27 @@
-import Image from "next/image"
+import Image from "next/image";
 import Card from "./layout/Card";
 
-interface cardProfessoresProps {
-  image: string,
-  nome: string,
-  descricao: string
+interface CardProfessoresProps {
+  image: string;
+  nome: string;
+  descricao: string;
 }
 
-export default function ProfessorCard({ image, nome, descricao }: cardProfessoresProps) {
+export default function ProfessorCard({ image, nome, descricao }: CardProfessoresProps) {
   return (
-    <Card className="flex flex-col items-center p-4">
-        <div className="w-40 h-40 rounded-2xl overflow-hidden">
-          <Image className="h-full w-full object-cover"
-            src={image}
-            alt={`Foto de ${nome}`}
-            width={150}
-            height={150}
-          />
-        </div>
-        <h3 className="text-azul text-lg font-bold">{nome}</h3>
-        <p className="text-sm font-bold">{descricao}</p>
+    <Card className="relative w-60 h-72 overflow-hidden rounded-2xl shadow-lg group mx-auto">
+      <Image
+        className="absolute inset-0 w-full h-full object-cover"
+        src={image}
+        alt={`Foto de ${nome}`}
+        width={208}
+        height={288}
+      />
+
+      <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-black/30 p-4">
+        <h3 className="text-white text-lg font-bold text-center">{nome}</h3>
+        <p className="text-white text-sm text-center hidden group-hover:block">{descricao}</p>
+      </div>
     </Card>
   );
 }

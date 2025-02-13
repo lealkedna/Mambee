@@ -21,7 +21,7 @@ export default {
         kanit: ['Kanit', 'sans-serif'],
       },
       screens: {
-        xs: '480px', // Define o breakpoint "xs" para telas menores que 480px
+        xs: '550px', // Define o breakpoint "xs" para telas menores que 480px
       },
     },
   },

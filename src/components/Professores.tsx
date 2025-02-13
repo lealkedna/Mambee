@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import ProfessorCard from './ProfessoresCard';
 import Title1 from './text/Title1';
 
@@ -29,25 +28,21 @@ export default function Professores() {
 
     return (
         <>
-            <section className="relative w-full max-w-7xl mx-auto">
-                <Image className="absolute top-[-50px] right-0 hidden md:block"
-                    src="/images/favoMel.png"
-                    width={120}
-                    height={120}
-                    alt="Favo de mel"
-                />
-                <Title1 className='text-center'>Nossos Professores</Title1>
-                <div className="grid grid-cols-1 xs:grid-cols-2 md:grid-cols-4 gap-4 p-5">
-                    {
-                        informacoes.map((info, index) => (
-                            <ProfessorCard
-                                key={index}
-                                image={info.image}
-                                nome={info.nome}
-                                descricao={info.descricao}
-                            />
-                        ))
-                    }
+            <section className="relative w-full mt-10 bg-[#2ECBF7]">
+                <div className='max-w-7xl min-h-[80vh] m-auto p-5 flex flex-col justify-center gap-10'>
+                    <Title1 className='text-center text-white'>Nossos Professores</Title1>
+                    <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4">
+                        {
+                            informacoes.map((info, index) => (
+                                <ProfessorCard
+                                    key={index}
+                                    image={info.image}
+                                    nome={info.nome}
+                                    descricao={info.descricao}
+                                />
+                            ))
+                        }
+                    </div>
                 </div>
             </section>
         </>

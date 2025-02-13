@@ -6,7 +6,7 @@ import Card from "./layout/Card";
 
 function Contato() {
     return (
-        <section id='Contato' className="w-full max-w-4xl mx-auto">
+        <section id='Contato' className="w-full max-w-4xl mx-auto min-h-[50vh] flex flex-col justify-center p-5">
             <Title1 className="text-center">Contato</Title1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-4">
                 <Card className="hover:bg-azul hover:text-white">

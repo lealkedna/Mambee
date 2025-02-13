@@ -4,9 +4,10 @@ interface HexagonProps {
   children: React.ReactNode;
   className?: string;
   size?: number; // Tamanho do hexágono (largura e altura)
+  color?: string; // Cor do hexágono
 }
 
-const Hexagon: React.FC<HexagonProps> = ({ children, className = "", size = 100 }) => {
+const Hexagon: React.FC<HexagonProps> = ({ children, className = "", size = 100, color = "#020617" }) => {
   const hexagonStyle = {
     width: `${size}px`,
     height: `${size}px`,
@@ -14,7 +15,7 @@ const Hexagon: React.FC<HexagonProps> = ({ children, className = "", size = 100 
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: "#020617",
+    backgroundColor: color,
   };
 
   return (
