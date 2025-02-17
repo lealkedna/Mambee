@@ -1,11 +1,10 @@
 "use client"
 import Image from "next/image";
 import Title1 from "./text/Title1";
-import Subtitle from "./text/Subtitle";
-import Hexagon from "./Hexagon";
+import Hexagon from "./layout/Hexagon";
 import { useEffect, useState } from "react";
 
-function Parceiros() {
+export default function Partners() {
   const [hexSize, setHexSize] = useState(150);
 
   useEffect(() => {
@@ -25,7 +24,7 @@ function Parceiros() {
     return () => window.removeEventListener("resize", updateSize); // Cleanup
   }, []);
 
-  const parceiros = [
+  const partners = [
     {
       image: "/images/parceiros/mb.svg",
       nome: "MB Labs",
@@ -83,22 +82,21 @@ function Parceiros() {
       <div className="max-w-5xl mx-auto p-5">
         <header className="text-center mb-10">
           <Title1>Parceiros</Title1>
-          <Subtitle className="mb-4">Transformando ideias em solução</Subtitle>
         </header>
         <div className="flex flex-wrap justify-center gap-8 items-center">
-          {parceiros.map((parceiro, index) => (
+          {partners.map((partner, index) => (
             <Hexagon
               size={hexSize}
               key={index}
-              color={parceiro.color || "#020617"}
+              color={partner.color || "#020617"}
             >
-              <a href={parceiro.link} className="flex items-center justify-center p-3">
+              <a href={partner.link} className="flex items-center justify-center p-3">
                 <Image
-                  src={parceiro.image}
-                  alt={parceiro.nome}
+                  src={partner.image}
+                  alt={partner.nome}
                   width={120}
                   height={120}
-                  className={`object-contain w-40 h-40 ${parceiro.padding} rounded-lg`}
+                  className={`object-contain w-40 h-40 ${partner.padding} rounded-lg`}
                 />
               </a>
             </Hexagon>
@@ -113,5 +111,3 @@ function Parceiros() {
     </div>
   );
 }
-
-export default Parceiros;

@@ -1,9 +1,9 @@
-import ProfessorCard from './ProfessoresCard';
+import TeachersCard from './TeachersCard';
 import Title1 from './text/Title1';
 
-export default function Professores() {
+export default function Teachers() {
 
-    const informacoes = [
+    const information = [
         {
             image: '/images/aislan.jpeg',
             nome: 'Aislan Rafael',
@@ -33,8 +33,8 @@ export default function Professores() {
                     <Title1 className='text-center text-white'>Nossos Professores</Title1>
                     <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4">
                         {
-                            informacoes.map((info, index) => (
-                                <ProfessorCard
+                            information.map((info, index) => (
+                                <TeachersCard
                                     key={index}
                                     image={info.image}
                                     nome={info.nome}

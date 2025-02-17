@@ -2,13 +2,13 @@ import Image from "next/image";
 import Card from "./layout/Card";
 import PrimaryButton from "./button/PrimaryButton";
 
-interface novoDestaqueProps {
+interface highlightsCardProps {
     image: string;
     desc: string;
     link: string;
 }
 
-export default function CardDestaques({ image, desc, link }: novoDestaqueProps) {
+export default function HighlightsCard({ image, desc, link }: highlightsCardProps) {
     return (
         <Card className="grid grid-rows-2 overflow-hidden">
             <div className="h-52">

@@ -1,10 +1,10 @@
-import Parceiros from "@/components/Parceiros";
-import Contato from "@/components/Contato";
-import Professores from "@/components/Professores";
-import Footer from "@/components/Footer";
-import Processo from "@/components/Processo";
-import Navbar from "@/components/Navbar";
-import Destaques from "@/components/Destaques";
+import Contact from "@/components/Contact";
+import Highlights from "@/components/Highlights";
+import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
+import Partners from "@/components/Partners";
+import Process from "@/components/Process";
+import Teachers from "@/components/Teachers";
 
 export default function Home() {
   return (
@@ -27,11 +27,11 @@ export default function Home() {
         </section>
 
         <div>
-          <Processo />
-          <Parceiros />
-          <Destaques />
-          <Professores />
-          <Contato />
+          <Process />
+          <Partners />
+          <Highlights />
+          <Teachers />
+          <Contact />
         </div>
         <Footer />
       </main>

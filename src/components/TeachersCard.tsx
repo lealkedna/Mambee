@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Card from "./layout/Card";
 
-interface CardProfessoresProps {
+interface TeachersCardProps {
   image: string;
   nome: string;
   descricao: string;
 }
 
-export default function ProfessorCard({ image, nome, descricao }: CardProfessoresProps) {
+export default function TeachersCard({ image, nome, descricao }: TeachersCardProps) {
   return (
     <Card className="relative w-60 h-72 overflow-hidden rounded-2xl shadow-lg group mx-auto">
       <Image
