@@ -17,7 +17,7 @@ function Footer() {
 
         <nav className="w-full sm:w-auto text-center">
           <ul className="flex flex-wrap justify-center gap-5 list-none m-0 p-0 text-xl font-medium">
-            <li className="text-rosa border-b-4 border-rosa">Início</li>
+            <a href="" className="text-rosa border-b-4 border-rosa">Início</a>
             {/* <li className="hover:text-rosa cursor-pointer">Projetos</li>
             <li className="hover:text-rosa cursor-pointer">Egressos</li> */}
           </ul>

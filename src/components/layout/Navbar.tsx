@@ -1,5 +1,6 @@
 "use client"
 import Image from "next/image";
+import PrimaryButton from "../button/PrimaryButton";
 
 export default function Navbar() {
     return (
@@ -14,7 +15,9 @@ export default function Navbar() {
                     />
                 </div>
                 <div className="flex space-x-5 text-xl font-bold">
-                    <a href="" className="text-rosa border-b-2 border-b-rosa">Início</a>
+                    <a href="#Contact">
+                        <PrimaryButton>Contate-nos</PrimaryButton>
+                    </a>
                     {/*<a href="">Projetos</a>
                     <a href="">Egressos</a>*/}
                 </div>

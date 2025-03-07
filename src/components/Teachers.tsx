@@ -28,7 +28,7 @@ export default function Teachers() {
 
     return (
         <>
-            <section className="relative w-full mt-10 bg-[#2ECBF7]">
+            <section className="relative w-full mt-10 bg-azul">
                 <div className='max-w-7xl min-h-[80vh] m-auto p-5 flex flex-col justify-center gap-10'>
                     <Title1 className='text-center text-white'>Nossos Professores</Title1>
                     <div className="grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-4">

@@ -27,9 +27,9 @@ export default function Home() {
         </section>
 
         <div>
-          <Process />
-          <Partners />
           <Highlights />
+          <Partners />
+          <Process />
           <Teachers />
           <Contact />
         </div>
