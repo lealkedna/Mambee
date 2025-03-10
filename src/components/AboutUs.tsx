@@ -32,7 +32,7 @@ export default function AboutUs() {
                         <span className="text-azul font-bold">Origem:</span> Fundada no curso de Análise e Desenvolvimento de Sistemas (ADS),
                         a Mambee foi criada para servir como um ambiente onde alunos podem
                         colocar em prática o que aprendem em sala de aula, desenvolvendo
-                        projetos de software reais.
+                        projetos de software reais. 
                     </p>
                     <p>
                         <span className="text-azul font-bold">Objetivos:</span> A Mambee busca promover o crescimento técnico e profissional dos
@@ -67,7 +67,7 @@ export default function AboutUs() {
                 </div>
                 <div className="col-span-1 md:col-span-2 flex justify-end">
                     <Link href="#Contato">
-                        <PrimaryButton className="w-full max-w-64">Vamos conversar</PrimaryButton>
+                        <PrimaryButton className="w-full max-w-64">Vamos conversar!</PrimaryButton>
                     </Link>
                 </div>
             </div>
